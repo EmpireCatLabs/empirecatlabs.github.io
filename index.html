@@ -77,13 +77,32 @@
     </div>
   </section>
 
-  <section>
+  <section id="cat-joke-section">
     <h2>😹 Kedi + Teknoloji = Mizah</h2>
-    <p>“Bilimsel araştırmalar gösteriyor ki, kodlama sırasında mırıldanan kediler %33 daha az hata yapıyor.”</p>
+    <p id="cat-joke">Yükleniyor...</p>
   </section>
 
   <footer>
-    Made with 🐱 by <a href="https://github.com/EmpireCatLabs" target="_blank">EmpireCatLabs</a>
+    Made with Cat(s) & ❤️ by <a href="https://github.com/EmpireCatLabs" target="_blank">EmpireCatLabs</a>
   </footer>
+
+  <script>
+    const catQuotes = [
+      "Bilgisayarım çöktü çünkü üstünde kedi yatıyordu. 😹",
+      "Kodlarım çalışmadı çünkü kedim Enter’a basmadı.",
+      "Bir developer, bir kedi ve bir mouse... başlarına neler geldi anlatamam.",
+      "Kedim pull request'i reddetti çünkü içinde balık yokmuş. 🐟",
+      "Stack Overflow değil, Cat Overflow yaşadım.",
+      "Kedi klavyeye yattı = commit başarısız.",
+      "Neden her dosya 'paw.js' diye adlandı? Kedim isimlendiriyor çünkü.",
+      "Yazılım geliştirme = %70 kedi bakışı, %30 kodlama.",
+      "VSCode'da tema: Kedi Modu 🐾",
+      "Ben değil, kedim debug yaptı. O çözünce çalıştı 😼"
+    ];
+
+    const jokeElement = document.getElementById("cat-joke");
+    const randomIndex = Math.floor(Math.random() * catQuotes.length);
+    jokeElement.textContent = catQuotes[randomIndex];
+  </script>
 </body>
 </html>
