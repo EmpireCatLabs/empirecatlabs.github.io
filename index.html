@@ -1,109 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EmpireCatLabs</title>
-  <link rel="icon" href="logo.png" />
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #fffaf5;
-      color: #333;
-    }
-    header {
-      background: #ff9e1b;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    header img {
-      width: 100px;
-      border-radius: 50%;
-    }
-    h1 {
-      margin: 0.5rem 0 0 0;
-    }
-    section {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1rem;
-    }
-    .project-card {
-      background: white;
-      border: 2px solid #ffe2b6;
-      border-radius: 8px;
-      padding: 1rem;
-      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-    }
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      color: #aaa;
-      padding: 1rem;
-      border-top: 1px solid #eee;
-      margin-top: 3rem;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TeaOS</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: system-ui, sans-serif;
+    background:#0f172a;
+    color:white;
+}
+
+header{
+    text-align:center;
+    padding:80px 20px;
+}
+
+header h1{
+    font-size:64px;
+}
+
+header p{
+    font-size:20px;
+    opacity:0.8;
+}
+
+button{
+    padding:15px 30px;
+    border:none;
+    border-radius:10px;
+    background:#22c55e;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+}
+
+section{
+    padding:60px 20px;
+    max-width:1000px;
+    margin:auto;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:12px;
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    opacity:0.6;
+}
+
+</style>
 </head>
+
 <body>
-  <header>
-    <img src="logo.png" alt="EmpireCatLabs Logo" />
-    <h1>EmpireCatLabs</h1>
-    <p>Kedi temalı oyunlar, yazılımlar, donanımlar ve biraz bilim 😼</p>
-  </header>
 
-  <section>
-    <h2>🚀 Projelerimiz</h2>
-    <div class="projects">
-      <div class="project-card">
-        <h3>BilgişConsole</h3>
-        <p>SteamOS benzeri özel bir Linux işletim sistemi. Konsol ruhu 🕹️</p>
-      </div>
-      <div class="project-card">
-        <h3>KediSMP Launcher</h3>
-        <p>Crack ve premium destekli özel Minecraft launcher'ı.</p>
-      </div>
-      <div class="project-card">
-        <h3>ESP32 Gamepad</h3>
-        <p>BLE destekli özel PCB ve kedi temalı kontrolcü projesi.</p>
-      </div>
-    </div>
-  </section>
+<header>
 
-  <section id="cat-joke-section">
-    <h2>😹 Kedi + Teknoloji = Mizah</h2>
-    <p id="cat-joke">Yükleniyor...</p>
-  </section>
+<h1>🍵 TeaOS</h1>
+<p>A modern Linux operating system built with bootable containers</p>
 
-  <footer>
-    Made with Cat(s) & ❤️ by <a href="https://github.com/EmpireCatLabs" target="_blank">EmpireCatLabs</a>
-  </footer>
+<br>
 
-  <script>
-    const catQuotes = [
-      "Bilgisayarım çöktü çünkü üstünde kedi yatıyordu. 😹",
-      "Kodlarım çalışmadı çünkü kedim Enter’a basmadı.",
-      "Bir developer, bir kedi ve bir mouse... başlarına neler geldi anlatamam.",
-      "Kedim pull request'i reddetti çünkü içinde balık yokmuş. 🐟",
-      "Stack Overflow değil, Cat Overflow yaşadım.",
-      "Kedi klavyeye yattı = commit başarısız.",
-      "Neden her dosya 'paw.js' diye adlandı? Kedim isimlendiriyor çünkü.",
-      "Yazılım geliştirme = %70 kedi bakışı, %30 kodlama.",
-      "VSCode'da tema: Kedi Modu 🐾",
-      "Ben değil, kedim debug yaptı. O çözünce çalıştı 😼",
-      "404 - Page not found My cat deleted it. Probably."
-    ];
+<button onclick="location.href='#download'">Download</button>
 
-    const jokeElement = document.getElementById("cat-joke");
-    const randomIndex = Math.floor(Math.random() * catQuotes.length);
-    jokeElement.textContent = catQuotes[randomIndex];
-  </script>
+</header>
+
+
+<section>
+
+<h2>About TeaOS</h2>
+
+<p>
+TeaOS is a modern Linux operating system built on Fedora using bootable container technology.
+It focuses on simplicity, performance, and a clean developer experience.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>Features</h2>
+
+<div class="features">
+
+<div class="card">
+<h3>Immutable System</h3>
+<p>Reliable system updates using container-based deployments.</p>
+</div>
+
+<div class="card">
+<h3>Fedora Based</h3>
+<p>Built on the latest Fedora technology and ecosystem.</p>
+</div>
+
+<div class="card">
+<h3>GNOME Desktop</h3>
+<p>Modern desktop experience with a clean interface.</p>
+</div>
+
+<div class="card">
+<h3>Developer Friendly</h3>
+<p>Perfect environment for hacking and building software.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="download">
+
+<h2>Download</h2>
+
+<p>Get the latest TeaOS release.</p>
+
+<br>
+
+<button onclick="window.open('https://github.com/YOUR_REPO/releases')">
+Download ISO
+</button>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 TeaOS Project</p>
+
+</footer>
+
 </body>
 </html>
